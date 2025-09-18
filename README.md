@@ -140,26 +140,38 @@ Here we optimize the simple rosenbrock function, to showcase the simplest case. 
 Where the terminal output was as follows:
 
 ```bash
-[cma         ] [##############################] 100%  best=0.9949593
-[cma         ] fx=0.994959  nfev=  1000  time=  0.66s
-[de          ] [##############################] 100%  best=0.0023312
-[de          ] fx=0.00233121  nfev=   990  time=  0.03s
-[ga          ] [##############################] 100%  best=0.206952
-[ga          ] fx=0.206952  nfev=  1000  time=  0.07s
-[abc         ] [##############################] 100%  best=0.000066
-[abc         ] fx=6.57672e-05  nfev=  1000  time=  0.05s
-[dual_anneal ] [##############################] 100%  best=0.0000008
-[dual_anneal ] fx=7.10543e-15  nfev=  1000  time=  0.06s
-[nelder_mead ] [##############################] 100%  best=16.914203
-[nelder_mead ] fx=16.9142  nfev=   157  time=  0.01s
-[powell      ] [##############################] 100%  best=0.0000006
-[powell      ] fx=0  nfev=    80  time=  0.00s
-[pso         ] [##############################] 100%  best=0.994962
-[pso         ] fx=0.994962  nfev=  1000  time=  0.02s
-[pgo         ] [##############################] 100%  best=0.0116657
-[pgo         ] fx=0.0116648  nfev=  1000  time=  0.16s
-[bho          ] [##############################] Best Loss: 0.079601
-[bho         ] fx=0.0796007  nfev=  1000  time=  0.10s
+[cma         ] [##############################] 100%  best=0.9950097
+[cma         ] fx=0.995009  score=-0.995009  nfev=  1000  time=  0.41s
+[de          ] [##############################] 100%  best=17.462322
+[de          ] fx=17.4623  score=-17.4623  nfev=   975  time=  0.02s
+[ga          ] [##############################] 100%  best=6.3839769
+[ga          ] fx=6.38398  score=-6.38398  nfev=  1000  time=  0.07s
+[abc         ] [##############################] 100%  best=0.3733587
+[abc         ] fx=0.373358  score=-0.373358  nfev=  1000  time=  0.06s
+[dual_anneal ] [##############################] 100%  best=4.9747904
+[dual_anneal ] fx=4.97479  score=-4.97479  nfev=  1000  time=  0.07s
+[nelder_mead ] [##############################] 100%  best=54.722358
+[nelder_mead ] fx=54.7224  score=-54.7224  nfev=   455  time=  0.02s
+[powell      ] [##############################] 100%  best=0.0000004
+[powell      ] fx=0  score=-0  nfev=   194  time=  0.01s
+[pso         ] [##############################] 100%  best=4.9844564
+[pso         ] fx=4.98446  score=-4.98446  nfev=  1000  time=  0.02s
+[pgo         ] [##############################] 100%  best=3.2360616
+[pgo         ] fx=3.23606  score=-3.23606  nfev=  1000  time=  0.13s
+[bho          ] [##############################] Best Loss: 9.9796097
+[bho         ] fx=9.97961  score=-9.97961  nfev=  1000  time=  0.10s
+
+=== Scoreboard (higher is better) ===
+ 1. powell        score=-0.000000  nfev=   194  time=  0.01s
+ 2. abc           score=-0.373358  nfev=  1000  time=  0.06s
+ 3. cma           score=-0.995009  nfev=  1000  time=  0.41s
+ 4. pgo           score=-3.236061  nfev=  1000  time=  0.13s
+ 5. dual_anneal   score=-4.974790  nfev=  1000  time=  0.07s
+ 6. pso           score=-4.984456  nfev=  1000  time=  0.02s
+ 7. ga            score=-6.383976  nfev=  1000  time=  0.07s
+ 8. bho           score=-9.979609  nfev=  1000  time=  0.10s
+ 9. de            score=-17.462322  nfev=   975  time=  0.02s
+10. nelder_mead   score=-54.722358  nfev=   455  time=  0.02s
 ```
 
 ## How to use:
