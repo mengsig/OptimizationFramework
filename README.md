@@ -85,7 +85,8 @@ and you can see how to invoke them by looking at the examples in *src/<...>_exam
         ├── __init__.py
         ├── lossFunctions.py
         ├── optimizers.py
-        └── plottingUtils.py```
+        └── plottingUtils.py
+```
 
 ## Examples
 
