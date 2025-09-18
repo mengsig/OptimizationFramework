@@ -1,0 +1,14 @@
+src/__pycache__/
+.DS_Store
+report.log
+src/report.log
+*.png
+__pycache__/
+*.pyc
+*.pyo
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.venv/
+opt_venv/

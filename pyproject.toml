@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OptimizationFramework"
+version = "0.1.0"
+description = "A lightweight optimization framework with array utilities, baselines, and optimizers."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Marcus Engsig" }
+]
+dependencies = [
+  "numpy>=2.3.2",
+  "matplotlib>=3.10.5",
+  "cma>=4.3.0",
+  "scipy>=1.16.1",
+  "networkx>=3.5",
+]
+
+# Optional classifiers 
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Repository = "https://github.com/mengsig/OptimizationFramework"  
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests*", "examples*", "figs*", "scripts*"]
